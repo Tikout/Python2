@@ -1,3 +1,8 @@
+from os import path
+import os
+
+
+
 nazwiska = open("nazwiska.txt", "r")
 
 Nazwiskaa = nazwiska.read()

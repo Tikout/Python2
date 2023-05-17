@@ -2,4 +2,4 @@ Nie wiem jak inaczej zrobić zadanie z kalkulatorem. Wyskakuje błąd mówiący 
 
 To samo jest z innymi plikami.. Wyskakuje błąd o tym że nie ma file or directory, ten sam problem raz się wydarzył na zajęciach. Pewnie źle import napisałem ale nwm jak inaczej to zrobić. Po napisaniu o pomoc nie dostałem odpowiedzi.
 
-Nie zrobiłem wszystkiego dobrze, bo miałem również problem z samymi zadaniami. Polecenia 9 kompletnie nie rozumiem
+Nie zrobiłem wszystkiego dobrze, bo miałem również problem z samymi zadaniami. Polecenia 9 i 11 kompletnie nie rozumiem.

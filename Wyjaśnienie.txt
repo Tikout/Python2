@@ -1,1 +1,3 @@
 Nie wiem jak inaczej zrobić zadanie z kalkulatorem. Wyskakuje błąd mówiący o tym, że tego kalkulatora nie ma do póki go nie otworzę w folderze Python Part 2 zamiast 6. Importy i moduły
+
+To samo jest z innymi plikami.. Wyskakuje błąd o tym że file nie ma w directory.

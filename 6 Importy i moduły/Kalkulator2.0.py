@@ -1,4 +1,4 @@
-from Metody import Metody as Dodawanie, Odejmowanie, Mnozenie, Dzielenie
+from Metody import Dodawanie, Odejmowanie, Mnozenie, Dzielenie
 
 print("Wybierz operacje")
 print("1.Dodawanie")

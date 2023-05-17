@@ -1,5 +1,5 @@
-file = open("C:\Python-Part2\Praca z plikami\tekst.txt", "rt")
-data = file.read()
-words = data.split()
+plik = open("C:\Python-Part2\Praca z plikami\tekst.txt", "rt")
+dane = plik.read()
+slowa = dane.split()
 
-print('Number of words in text file :', len(words))
+print('Tyle jest slow w pliku :', len(slowa))

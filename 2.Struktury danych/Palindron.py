@@ -1,4 +1,4 @@
-a = "Kajak"
+a = (input("Podaj słowo"))
 
 a_odwrocone = a[::-1]
 

@@ -1,6 +1,6 @@
-wiek = input("Podaj swoj wiek")
-y = int(wiek)
-if y < 18:
+wiek = int(input("Podaj swoj wiek"))
+
+if wiek > 18:
     print ("Masz wiecej niz 18 lat")
     pass
 else:

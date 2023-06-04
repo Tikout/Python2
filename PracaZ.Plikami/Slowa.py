@@ -11,4 +11,5 @@ with open(data_path1, 'r', encoding= 'Utf-8') as file:
     dane = file.read()
     slowa = dane.split()
 
+
     print('Tyle jest slow w pliku :', len(slowa))

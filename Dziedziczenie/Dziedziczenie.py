@@ -1,13 +1,40 @@
-class Prostokat_Pole:
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-    def licz(self):
-        print("Pole wynosi:", self.a * self.b, "cm^2")
+from abc import ABC, abstractmethod
 
+class Animal(ABC):
+    def init(self, name):
+        self._name = name  
 
-Prostokat1 = Prostokat_Pole(12, 13)
-Prostokat1.licz()
+    @abstractmethod
+    def make_sound(self):
+        pass
 
-Prostokat2 = Prostokat_Pole(11, 9)
-Prostokat2.licz()
+    def get_name(self):  
+        return self._name
+
+class Dog(Animal):
+    def init(self, name, breed):
+        super().init(name)  
+        self._breed = breed  
+
+    def make_sound(self):
+        return "Woof!"
+
+    def get_breed(self):  
+        return self._breed
+
+class Cat(Animal):
+    def init(self, name, color):
+        super().init(name)  
+        self._color = color  
+
+    def make_sound(self): 
+        return "Meow!"
+
+    def get_color(self):
+        return self._color
+
+dog = Dog("Rex", "German Shepherd")
+print(dog.get_name(), "is a", dog.get_breed(), "and says", dog.make_sound())
+
+cat = Cat("Mittens", "Black")
+print(cat.get_name(), "is a", cat.get_color(), "cat and says", cat.make_sound())

@@ -1,45 +1,20 @@
-class Czytelnik:
-    def __init__(self,imie,nazwisko,wiek,adres):
-        self.imie = imie
-        self._nazwisko = nazwisko
-        self._wiek = wiek
-        self.lista_adresow = ["Urzednicza 4/3", "Mariacka 4/2"]
-        self.__update(adres)
+class SecureClass:
+    def init(self, secure_field):
+        self.secure_field = secure_field
 
-    def update(self, adres):
-        for item in adres:
-            self.lista_adresow.append(item)
+    def get_secure_field(self):
+        return self.secure_field
 
-    __update = update
-class MappingSubclass(Czytelnik):
+    def set_secure_field(self, value):
+        if self.validate(value):
+            self.secure_field = value
+        else:
+            raise ValueError("Invalid value")
 
-    def update(self, keys, values):
-        for item in zip(keys, values):
-            self.items_list.append(item)
+    def __validate(self, value): #Metoda prywatna
+        return isinstance(value, int) and value > 0
 
-
-
-def pobierz_wiek(self) -> int:
-    return self._wiek
-def pobierz_imie(self) -> str:
-    return self.imie
-
-czytelnik1 = Czytelnik(
-    imie= "Mateusz",
-    nazwisko="Mąciwor",
-    wiek= 21,
-    adres = ""
-)
-
-czytelnik2 = Czytelnik(
-    imie= "Natalia",
-    nazwisko="Muszka",
-    wiek= 21,
-    adres = ""
-)
-
-print(pobierz_imie(czytelnik1))
-print(pobierz_wiek(czytelnik1))
-
-print(pobierz_imie(czytelnik2))
-print(pobierz_wiek(czytelnik2))
+secure = SecureClass(123)
+print(secure.get_secure_field()) 
+secure.set_secure_field(456) 
+print(secure.get_secure_field())
